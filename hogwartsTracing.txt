@@ -1,0 +1,19 @@
+I added println() statements to show what the result is of each operation.
+The result of these additional println()'s is:
+
+In run(), bludger( 2001 ); is called:
+	bludger() is called with y=2001.
+		The result of: int x = y / 1000; is :2:
+		The result of: int z = ( x + y ); is :2003:
+			quaffle() is called with x=2003, y=2001.
+				snitch() is called with x=4004, y=2001.
+				The result of: y = x / ( x % 10 ); is :1001:
+snitch: x = 4004, y = 1001
+				return y from snitch().
+			The result of: int z = snitch( x + y, y ); is :1001:
+			The result of: y /= z; is :1:
+quaffle: x = 2003, y = 1, z = 1001
+			Return z from quaffle().
+		The result of: x = quaffle( z, y ); is :2003:
+bludger: x = 1001, y = 2001, z = 2003
+		Return from bludger().

@@ -1,0 +1,3 @@
+On some runs of this program you might not see ten circles. Why?
+
+Some circles may be eclipsed by others.
